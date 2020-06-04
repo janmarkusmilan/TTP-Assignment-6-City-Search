@@ -4,14 +4,10 @@ class CitySearch extends Component {
   render() {
     if (this.props.zipCodes.length > 0) {
       return this.props.zipCodes.map((zips) => {
-        return (
-          <div key={zips.RecordNumber} style={zipStyle}>
-            {zips}
-          </div>
-        );
+        return <div style={zipStyle}>{zips}</div>;
       });
     } else {
-      return <div style={zipStyle}>No Results</div>;
+      return <p style={zipStyle}>No Results</p>;
     }
   }
 }
