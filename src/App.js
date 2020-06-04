@@ -49,7 +49,7 @@ class App extends Component {
           </form>
           <hr />
           <div>
-            <p style={paraStyle}>Zip Codes In The Citu</p>
+            <p style={paraStyle}>Zip Codes In The City</p>
             <CitySearch zipCodes={this.state.zipCodes} />
           </div>
         </div>
